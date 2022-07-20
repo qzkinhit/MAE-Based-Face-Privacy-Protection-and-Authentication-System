@@ -1,0 +1,96 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://10.0.24.8:8501
+  External URL: http://101.43.135.58:8501
+
+2022-02-09 09:38:08.297 InMemoryFileManager: Missing file efe6eef96d6eecb54a1b34484d520bbec27beda08e2e1c04fbc5a52e.jpeg
+2022-02-09 09:38:08.414 InMemoryFileManager: Missing file efe6eef96d6eecb54a1b34484d520bbec27beda08e2e1c04fbc5a52e.jpeg
+2022-02-19 13:09:15.328 Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/python/python388/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/streamlit/script_runner.py", line 379, in _run_script
+    exec(code, module.__dict__)
+  File "/usr/python/MAE_version3.2/MAE_3.2/mae_web/main.py", line 77, in <module>
+    result = r.json()
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+2022-02-19 13:09:50.559 Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/python/python388/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/streamlit/script_runner.py", line 379, in _run_script
+    exec(code, module.__dict__)
+  File "/usr/python/MAE_version3.2/MAE_3.2/mae_web/main.py", line 77, in <module>
+    result = r.json()
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+2022-02-19 13:13:18.549 Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/python/python388/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/streamlit/script_runner.py", line 379, in _run_script
+    exec(code, module.__dict__)
+  File "/usr/python/MAE_version3.2/MAE_3.2/mae_web/main.py", line 77, in <module>
+    result = r.json()
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+2022-02-19 13:22:20.578 Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/python/python388/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/python/python388/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/streamlit/script_runner.py", line 379, in _run_script
+    exec(code, module.__dict__)
+  File "/usr/python/MAE_version3.2/MAE_3.2/mae_web/main.py", line 77, in <module>
+    result = r.json()
+  File "/usr/python/python388/lib/python3.8/site-packages/requests/models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+

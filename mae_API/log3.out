@@ -1,0 +1,1058 @@
+INFO:     Started server process [16654]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:12340 (Press CTRL+C to quit)
+[271.84, 206, 434.83, 229]
+mask_status: 0
+INFO:     101.43.135.58:41240 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56234e82e0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390824
+seed是: 1585390824
+INFO:     101.43.135.58:41246 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:41252 - "POST /match HTTP/1.0" 200 OK
+[267.56, 288, 381.72, 297]
+mask_status: 0
+INFO:     101.43.135.58:41444 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:41450 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:41452 - "POST /match HTTP/1.0" 200 OK
+[191.21, 222, 391.89, 237]
+mask_status: 0
+INFO:     101.43.135.58:42172 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56234ee940>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390824
+seed是: 1585390824
+INFO:     101.43.135.58:42186 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42190 - "POST /match HTTP/1.0" 200 OK
+[190.31, 220, 409.37, 237]
+mask_status: 0
+INFO:     101.43.135.58:42198 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56234eed60>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390824
+seed是: 1585390824
+INFO:     101.43.135.58:42202 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42206 - "POST /match HTTP/1.0" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:57966 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:57982 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:57988 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622108e50>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390853
+SUCCESS
+测试得分为 96.21682739
+相应附加值为 31
+INFO:     127.0.0.1:57994 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56234745b0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1585390853
+INFO:     127.0.0.1:58004 - "POST /signup HTTP/1.1" 200 OK
+[189.68, 227, 415.62, 236]
+mask_status: 0
+INFO:     101.43.135.58:42358 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56234c2640>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:42362 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42364 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42370 - "GET /user/info?token=tom HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42388 - "GET /user/info?token=tom HTTP/1.0" 200 OK
+[208.93, 215, 377.7, 231]
+mask_status: 0
+INFO:     101.43.135.58:42574 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42580 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:42582 - "POST /match HTTP/1.0" 200 OK
+INFO:     167.94.138.119:48364 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.119:50032 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     101.43.135.58:44388 - "OPTIONS /detect HTTP/1.0" 400 Bad Request
+INFO:     101.43.135.58:44400 - "OPTIONS /detect HTTP/1.0" 400 Bad Request
+[101.42, 218, 394.68, 223]
+mask_status: 0
+INFO:     101.43.135.58:44428 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562254ef70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:44432 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44438 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44442 - "GET /user/info?token=tom HTTP/1.0" 200 OK
+INFO:     111.42.148.223:59278 - "OPTIONS /detect HTTP/1.1" 200 OK
+[101.37, 219, 394.8, 226]
+mask_status: 0
+INFO:     111.42.148.223:59278 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.223:59278 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5623474850>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     111.42.148.223:59278 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.223:59278 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.223:35171 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.223:35171 - "OPTIONS /user/info?token=tom HTTP/1.1" 200 OK
+INFO:     111.42.148.223:35171 - "GET /user/info?token=tom HTTP/1.1" 200 OK
+INFO:     101.43.135.58:44592 - "OPTIONS /detect HTTP/1.0" 200 OK
+[104.96, 218, 430.33, 226]
+mask_status: 0
+INFO:     101.43.135.58:44594 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44598 - "OPTIONS /rec HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562220d1f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:44600 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44604 - "OPTIONS /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44606 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44610 - "OPTIONS /user/info?token=tom HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44612 - "GET /user/info?token=tom HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44620 - "OPTIONS /user/logout HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44622 - "GET /user/logout HTTP/1.0" 200 OK
+[107.14, 213, 420.32, 221]
+mask_status: 0
+INFO:     101.43.135.58:44628 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562220de20>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:44632 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44636 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44644 - "GET /user/info?token=tom HTTP/1.0" 200 OK
+INFO:     111.42.148.223:33509 - "OPTIONS /detect HTTP/1.1" 200 OK
+[109.19, 217, 420.81, 228]
+mask_status: 0
+INFO:     111.42.148.223:33509 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.223:33509 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562254e4f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     111.42.148.223:43498 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.223:43498 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.223:33509 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.223:33509 - "OPTIONS /user/info?token=tom HTTP/1.1" 200 OK
+INFO:     111.42.148.223:33509 - "GET /user/info?token=tom HTTP/1.1" 200 OK
+INFO:     101.43.135.58:44792 - "OPTIONS /detect HTTP/1.0" 200 OK
+[101.62, 208, 384.02, 232]
+mask_status: 0
+INFO:     101.43.135.58:44794 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44800 - "OPTIONS /rec HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220fc580>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:44802 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44808 - "OPTIONS /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44810 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:44848 - "OPTIONS /detect HTTP/1.0" 400 Bad Request
+INFO:     101.43.135.58:44872 - "OPTIONS /detect HTTP/1.0" 400 Bad Request
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:48860 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:48868 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:48882 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:48890 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:48898 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56220fc460>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390853
+SUCCESS
+测试得分为 96.21682739
+相应附加值为 31
+INFO:     127.0.0.1:48904 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562222d8b0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1585390853
+INFO:     127.0.0.1:48916 - "POST /signup HTTP/1.1" 200 OK
+[231.77, 254, 322.59, 253]
+mask_status: 0
+INFO:     101.43.135.58:33252 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:33256 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:33258 - "POST /match HTTP/1.0" 200 OK
+[221.88, 244, 334.86, 244]
+mask_status: 0
+INFO:     101.43.135.58:33270 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f5622554a00>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:33274 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:33278 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:33286 - "GET /user/info?token=tom1 HTTP/1.0" 200 OK
+INFO:     101.43.135.58:33290 - "GET /user/logout HTTP/1.0" 200 OK
+[223.67, 128, 510.66, 164]
+mask_status: 0
+INFO:     127.0.0.1:50096 - "POST /detect HTTP/1.1" 200 OK
+[223.67, 128, 510.66, 164]
+mask_status: 0
+INFO:     127.0.0.1:50110 - "POST /detect HTTP/1.1" 200 OK
+[223.67, 128, 510.66, 164]
+mask_status: 0
+INFO:     127.0.0.1:50116 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562222d640>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1241072227
+SUCCESS
+当前附加值为 31
+测试得分为 71.37980652
+<__main__.mae_args object at 0x7f56234ddb50>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1241072228
+SUCCESS
+当前附加值为 32
+测试得分为 73.6675415
+<__main__.mae_args object at 0x7f5623503e80>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1241072229
+SUCCESS
+测试得分为 93.84597778
+相应附加值为 33
+INFO:     127.0.0.1:50122 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562220dcd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1241072229
+INFO:     127.0.0.1:50140 - "POST /signup HTTP/1.1" 200 OK
+[216.46, 157, 512.15, 176]
+mask_status: 0
+INFO:     127.0.0.1:50170 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622554a00>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1241072229
+seed是: 1241072229
+INFO:     127.0.0.1:50176 - "POST /rec HTTP/1.1" 200 OK
+[216.46, 157, 512.15, 176]
+mask_status: 0
+INFO:     127.0.0.1:50188 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622554ac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1241072229
+seed是: 1241072229
+INFO:     127.0.0.1:50194 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50200 - "POST /match HTTP/1.1" 200 OK
+INFO:     167.94.138.46:37112 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.46:52020 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+[226.9, 114, 441.16, 122]
+mask_status: 0
+INFO:     127.0.0.1:37320 - "POST /detect HTTP/1.1" 200 OK
+[226.9, 114, 441.16, 122]
+mask_status: 0
+INFO:     127.0.0.1:37328 - "POST /detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37334 - "POST /test HTTP/1.1" 200 OK
+[226.9, 114, 441.16, 122]
+mask_status: 0
+INFO:     127.0.0.1:37348 - "POST /detect HTTP/1.1" 200 OK
+[226.9, 114, 441.16, 122]
+mask_status: 0
+INFO:     127.0.0.1:37354 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562255f0a0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390853
+SUCCESS
+测试得分为 90.76622009
+相应附加值为 31
+INFO:     127.0.0.1:37368 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56234b2fd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1585390853
+INFO:     127.0.0.1:37374 - "POST /signup HTTP/1.1" 200 OK
+[182.67, 180, 841.07, 147]
+mask_status: 0
+INFO:     127.0.0.1:37396 - "POST /detect HTTP/1.1" 200 OK
+[219.75, 147, 412.52, 151]
+mask_status: 1
+INFO:     127.0.0.1:37414 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622233fd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3759594832
+seed是: 3759594832
+INFO:     127.0.0.1:37420 - "POST /rec HTTP/1.1" 200 OK
+[219.75, 147, 412.52, 151]
+mask_status: 1
+INFO:     127.0.0.1:37434 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56234ddb50>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3759594832
+seed是: 3759594832
+INFO:     127.0.0.1:37440 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37444 - "POST /match HTTP/1.1" 200 OK
+[236.45, 118, 439.81, 119]
+mask_status: 0
+INFO:     127.0.0.1:37600 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622222ac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3759594832
+seed是: 3759594832
+INFO:     127.0.0.1:37606 - "POST /rec HTTP/1.1" 200 OK
+[236.45, 118, 439.81, 119]
+mask_status: 0
+INFO:     127.0.0.1:37618 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f562254e790>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3759594832
+seed是: 3759594832
+INFO:     127.0.0.1:37624 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37628 - "POST /match HTTP/1.1" 200 OK
+[245.43, 136, 410.76, 134]
+mask_status: 0
+INFO:     127.0.0.1:37676 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622233700>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:37682 - "POST /rec HTTP/1.1" 200 OK
+[245.43, 136, 410.76, 134]
+mask_status: 0
+INFO:     127.0.0.1:37686 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56220fc4c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:37692 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37698 - "POST /match HTTP/1.1" 200 OK
+[189.7, 110, 399.85, 112]
+mask_status: 0
+INFO:     127.0.0.1:37740 - "POST /detect HTTP/1.1" 200 OK
+[240.75, 122, 395.76, 129]
+mask_status: 0
+INFO:     127.0.0.1:37754 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f5622554ac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:37760 - "POST /rec HTTP/1.1" 200 OK
+[240.75, 122, 395.76, 129]
+mask_status: 0
+INFO:     127.0.0.1:37772 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56220d98e0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:37778 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37784 - "POST /match HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     111.7.96.148:48958 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.7.96.147:20670 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     111.7.96.177:25550 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.7.96.177:25550 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     101.227.1.197:26689 - "GET / HTTP/1.1" 404 Not Found
+INFO:     101.227.1.197:26689 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     123.160.221.21:31510 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:33482 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:33482 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     167.248.133.61:52192 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.61:53600 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     162.142.125.222:45602 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.222:48030 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     123.160.221.20:42184 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.7.96.148:46016 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     123.160.221.22:26602 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:28082 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:28082 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.8:61035 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.8:61035 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:3750 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:3750 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:28889 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:28889 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:4461 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:4461 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:56748 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:56748 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     167.248.133.62:52732 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.62:47082 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.62:36594 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     162.142.125.9:55836 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.9:37116 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+[427.91, 329, 180.63, 310]
+mask_status: 0
+INFO:     101.43.135.58:40982 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:40986 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:40990 - "POST /match HTTP/1.0" 200 OK
+[293.82, 258, 289.1, 255]
+mask_status: 0
+INFO:     101.43.135.58:40996 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:41000 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:41004 - "POST /match HTTP/1.0" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38240 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38348 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38358 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38364 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38372 - "POST /detect HTTP/1.1" 200 OK
+[261.96, 317, 217.58, 333]
+mask_status: 0
+INFO:     127.0.0.1:38378 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56232ca490>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 92.4510498
+相应附加值为 31
+INFO:     127.0.0.1:38384 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f56223c0bb0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     127.0.0.1:38396 - "POST /signup HTTP/1.1" 200 OK
+[145.6, 262, 415.78, 272]
+mask_status: 0
+INFO:     101.43.135.58:50948 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220d9df0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:50952 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:50956 - "POST /match HTTP/1.0" 200 OK
+[176.79, 235, 424.99, 250]
+mask_status: 0
+INFO:     101.43.135.58:51902 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562222d640>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:51906 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:51910 - "POST /match HTTP/1.0" 200 OK
+[182.13, 225, 452.39, 237]
+mask_status: 0
+[184.79, 231, 449.62, 239]
+mask_status: 0
+INFO:     101.43.135.58:52120 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562222d430>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:52124 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52130 - "POST /match HTTP/1.0" 200 OK
+[279.44, 187, 447.96, 199]
+mask_status: 0
+INFO:     101.43.135.58:52380 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f562222d790>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:52384 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52386 - "POST /match HTTP/1.0" 200 OK
+[111.77, 262, 427.53, 274]
+mask_status: 0
+INFO:     101.43.135.58:52576 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220d9970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:52580 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52588 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52802 - "OPTIONS /detect HTTP/1.0" 200 OK
+[142.48, 239, 460.09, 251]
+mask_status: 0
+[157.58, 249, 440.07, 256]
+mask_status: 0
+INFO:     101.43.135.58:52814 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52818 - "OPTIONS /rec HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56225e0eb0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     101.43.135.58:52820 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52824 - "OPTIONS /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52826 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52832 - "OPTIONS /user/info?token=tom3 HTTP/1.0" 200 OK
+INFO:     101.43.135.58:52836 - "GET /user/info?token=tom3 HTTP/1.0" 200 OK
+[143.11, 233, 365.39, 244]
+mask_status: 0
+INFO:     101.43.135.58:53402 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220d9f40>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     101.43.135.58:53406 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:53410 - "POST /match HTTP/1.0" 200 OK
+[126.87, 219, 417.2, 242]
+mask_status: 0
+INFO:     101.43.135.58:53490 - "POST /detect HTTP/1.0" 200 OK
+INFO:     101.43.135.58:53494 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:53496 - "POST /match HTTP/1.0" 200 OK
+[143.97, 241, 410.12, 252]
+mask_status: 0
+INFO:     101.43.135.58:53506 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220d9b80>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     101.43.135.58:53510 - "POST /rec HTTP/1.0" 200 OK
+[162.9, 237, 398.96, 251]
+mask_status: 0
+INFO:     101.43.135.58:53520 - "POST /detect HTTP/1.0" 200 OK
+<__main__.mae_args object at 0x7f56220d9d30>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     101.43.135.58:53524 - "POST /rec HTTP/1.0" 200 OK
+INFO:     101.43.135.58:53528 - "POST /match HTTP/1.0" 200 OK
+INFO:     101.43.135.58:53532 - "GET /user/info?token=tom3 HTTP/1.0" 200 OK
+INFO:     167.248.133.117:44104 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.117:32910 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     111.7.96.148:20458 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.7.96.150:29772 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     111.7.96.150:56996 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:36224 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.4:36224 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:54474 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:54474 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.99.136.136:58218 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.99.136.136:58218 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:54603 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.5:54603 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     101.227.1.199:10539 - "GET / HTTP/1.1" 404 Not Found
+INFO:     101.227.1.199:10539 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:48949 - "GET / HTTP/1.1" 404 Not Found
+INFO:     211.95.50.7:48949 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     162.142.125.222:50924 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.222:37920 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     127.0.0.1:51824 - "POST /detect HTTP/1.1" 200 OK
+[393.92, 562, 247.67, 592]
+mask_status: 0
+INFO:     127.0.0.1:51932 - "POST /detect HTTP/1.1" 200 OK
+[393.92, 562, 247.67, 592]
+mask_status: 0
+INFO:     127.0.0.1:51966 - "POST /detect HTTP/1.1" 200 OK

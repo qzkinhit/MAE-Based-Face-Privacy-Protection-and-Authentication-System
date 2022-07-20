@@ -1,0 +1,840 @@
+INFO:     Started server process [28826]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:12340 (Press CTRL+C to quit)
+INFO:     112.49.87.116:30123 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 222319321, 'timestamp': 1645243422, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '36224dc64591f4f158dbd3720c2d9d32', 'location': {'left': 271.13, 'top': 124.8, 'width': 172, 'height': 164, 'rotation': -6}, 'face_probability': 1, 'angle': {'yaw': -4.04, 'pitch': -8.16, 'roll': -9.46}, 'quality': {'occlusion': {'left_eye': 0.08, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 115, 'completeness': 1}}]}}
+[124.8, 164, 271.13, 172]
+INFO:     112.49.87.116:30123 - "POST /detect HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30123 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7faa35994d60>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 498453776
+seed是: 498453776
+INFO:     112.49.87.116:30123 - "POST /rec HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30123 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30123 - "POST /match HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30123 - "OPTIONS /user/info?token=test20 HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30123 - "GET /user/info?token=test20 HTTP/1.1" 200 OK
+INFO:     111.42.148.222:59748 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 76740514, 'timestamp': 1645246876, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '07ae5faef6987fb75391abb1f95e8073', 'location': {'left': 984.46, 'top': 1771.47, 'width': 1298, 'height': 1373, 'rotation': -92}, 'face_probability': 1, 'angle': {'yaw': 3.08, 'pitch': 4.36, 'roll': -94.1}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.03, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 122, 'completeness': 1}}]}}
+[1771.47, 1373, 984.46, 1298]
+INFO:     111.42.148.222:59748 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.222:36934 - "OPTIONS /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.222:36934 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.222:36934 - "OPTIONS /test HTTP/1.1" 200 OK
+2
+<__main__.mae_args object at 0x7faa35994f70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 2
+pic not has face
+INFO:     111.42.148.222:36934 - "POST /test HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 434, in calculate
+    if result_baidu['result']['score'] > 92:
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 178882564, 'timestamp': 1645246978, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'f838fd5daf7f691f1568dd55bc6d71d2', 'location': {'left': 2127.32, 'top': 1819.03, 'width': 1425, 'height': 1563, 'rotation': -173}, 'face_probability': 1, 'angle': {'yaw': -2.36, 'pitch': -1.44, 'roll': -176.34}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 98, 'completeness': 1}}]}}
+[1819.03, 1563, 2127.32, 1425]
+INFO:     111.42.148.222:59144 - "POST /detect HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30107 - "OPTIONS /user/info?token=12140 HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30107 - "GET /user/info?token=12140 HTTP/1.1" 200 OK
+INFO:     112.49.87.116:30117 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 227575392, 'timestamp': 1645247027, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '8be339957bd77d23c56cdce582d837ab', 'location': {'left': 468.02, 'top': 653.47, 'width': 338, 'height': 374, 'rotation': -6}, 'face_probability': 1, 'angle': {'yaw': -38.08, 'pitch': 9.14, 'roll': 2.43}, 'quality': {'occlusion': {'left_eye': 0.08, 'right_eye': 0.01, 'nose': 0, 'mouth': 0, 'left_cheek': 0.27, 'right_cheek': 0.05, 'chin_contour': 0.05}, 'blur': 0, 'illumination': 125, 'completeness': 1}}]}}
+[653.47, 374, 468.02, 338]
+INFO:     112.49.87.116:30117 - "POST /detect HTTP/1.1" 200 OK
+INFO:     123.167.76.189:8873 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 272876629, 'timestamp': 1645247072, 'cached': 0, 'result': None}
+INFO:     123.167.76.189:8873 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 294857898, 'timestamp': 1645247094, 'cached': 0, 'result': None}
+INFO:     123.167.76.189:8761 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+INFO:     123.167.76.189:8834 - "POST /detect HTTP/1.1" 200 OK
+INFO:     123.167.76.189:8881 - "OPTIONS /checkusername HTTP/1.1" 200 OK
+INFO:     123.167.76.189:8881 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     123.167.76.189:8881 - "OPTIONS /test HTTP/1.1" 200 OK
+INFO:     123.167.76.189:8881 - "POST /test HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 408, in calculate
+    img_path = get_img_path(purpose, item.img_base64)
+  File "run_mae_vis.py", line 162, in get_img_path
+    img_decode = cv2.imdecode(nparr, 1)  # <class "numpy.ndarray">
+cv2.error: OpenCV(4.5.5) /io/opencv/modules/imgcodecs/src/loadsave.cpp:816: error: (-215:Assertion failed) !buf.empty() in function 'imdecode_'
+
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 347242414, 'timestamp': 1645247147, 'cached': 0, 'result': None}
+INFO:     123.167.76.189:8878 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 474957299, 'timestamp': 1645247275, 'cached': 0, 'result': None}
+INFO:     123.167.76.189:8779 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 499721052, 'timestamp': 1645247299, 'cached': 0, 'result': None}
+INFO:     123.167.76.189:8781 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 554602999, 'timestamp': 1645247354, 'cached': 0, 'result': None}
+INFO:     127.0.0.1:59648 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 589841435, 'timestamp': 1645247389, 'cached': 0, 'result': None}
+INFO:     127.0.0.1:59686 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 615674850, 'timestamp': 1645247415, 'cached': 0, 'result': None}
+INFO:     112.49.87.116:29255 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 222203, 'error_msg': 'image check fail', 'log_id': 629321723, 'timestamp': 1645247429, 'cached': 0, 'result': None}
+INFO:     112.49.87.116:29260 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 637390408, 'timestamp': 1645247437, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '06ae37078ad8a2b94cfacf52b6877b7d', 'location': {'left': 277.75, 'top': 521.96, 'width': 403, 'height': 425, 'rotation': -6}, 'face_probability': 1, 'angle': {'yaw': 12.45, 'pitch': 1.57, 'roll': -5.67}, 'quality': {'occlusion': {'left_eye': 0.1, 'right_eye': 0.03, 'nose': 0, 'mouth': 0, 'left_cheek': 0.16, 'right_cheek': 0.14, 'chin_contour': 0}, 'blur': 0, 'illumination': 139, 'completeness': 1}}]}}
+[521.96, 425, 277.75, 403]
+INFO:     112.49.87.116:29266 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 645082160, 'timestamp': 1645247445, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '8be339957bd77d23c56cdce582d837ab', 'location': {'left': 468.02, 'top': 653.47, 'width': 338, 'height': 374, 'rotation': -6}, 'face_probability': 1, 'angle': {'yaw': -38.08, 'pitch': 9.14, 'roll': 2.43}, 'quality': {'occlusion': {'left_eye': 0.08, 'right_eye': 0.01, 'nose': 0, 'mouth': 0, 'left_cheek': 0.27, 'right_cheek': 0.05, 'chin_contour': 0.05}, 'blur': 0, 'illumination': 125, 'completeness': 1}}]}}
+[653.47, 374, 468.02, 338]
+INFO:     112.49.87.116:29270 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 661575000, 'timestamp': 1645247461, 'cached': 0, 'result': None}
+INFO:     112.49.87.116:29273 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 668303496, 'timestamp': 1645247468, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '585987af3a9023085b7417e9fd14d139', 'location': {'left': 1358.18, 'top': 407.8, 'width': 336, 'height': 297, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': -1.74, 'pitch': 4.69, 'roll': -1.59}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0.04, 'illumination': 169, 'completeness': 1}}]}}
+[407.8, 297, 1358.18, 336]
+INFO:     127.0.0.1:59774 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 797852097, 'timestamp': 1645247597, 'cached': 0, 'result': None}
+INFO:     127.0.0.1:59904 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+INFO:     111.42.148.210:40945 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 986970276, 'timestamp': 1645247786, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '714e39890dfd007c9abf670378806efb', 'location': {'left': 139.45, 'top': 167.08, 'width': 213, 'height': 203, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': -1.96, 'pitch': 1.2, 'roll': -1.41}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 179, 'completeness': 1}}]}}
+[167.08, 203, 139.45, 213]
+INFO:     111.42.148.210:40945 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1154899453, 'timestamp': 1645247954, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '690c95550c5635c1019e643eea55b8c9', 'location': {'left': 374.59, 'top': 657.13, 'width': 829, 'height': 909, 'rotation': -4}, 'face_probability': 1, 'angle': {'yaw': 3.68, 'pitch': 5.14, 'roll': -5.33}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0.01, 'chin_contour': 0}, 'blur': 0, 'illumination': 136, 'completeness': 1}}]}}
+[657.13, 909, 374.59, 829]
+INFO:     111.42.148.210:57792 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 222304, 'error_msg': 'image size is too large', 'log_id': 1339854106, 'timestamp': 1645248139, 'cached': 0, 'result': None}
+INFO:     127.0.0.1:60438 - "POST /detect HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 364, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/applications.py", line 212, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/python/python388/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "/usr/python/python388/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "run_mae_vis.py", line 608, in calculate
+    top = result_baidu['result']['face_list'][0]['location']['top']
+TypeError: 'NoneType' object is not subscriptable
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1610805204, 'timestamp': 1645255610, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'a87870ff7290f59c136d83e4ffb7c662', 'location': {'left': 554.61, 'top': 1539.31, 'width': 841, 'height': 920, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 7.64, 'pitch': 7.68, 'roll': -2.41}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0.01, 'chin_contour': 0}, 'blur': 0, 'illumination': 110, 'completeness': 1}}]}}
+[1539.31, 920, 554.61, 841]
+INFO:     1.24.25.54:18123 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1615341953, 'timestamp': 1645255615, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '369fcb1b98aab3a0f1b722f8df8a3d2b', 'location': {'left': 593.12, 'top': 1479.45, 'width': 712, 'height': 774, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': 6.53, 'pitch': 2.51, 'roll': -5.96}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 119, 'completeness': 1}}]}}
+[1479.45, 774, 593.12, 712]
+INFO:     1.24.25.54:18128 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1619492228, 'timestamp': 1645255619, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '37eb4c9d880051af56a828950835395c', 'location': {'left': 456.32, 'top': 1310.17, 'width': 798, 'height': 862, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': -3.06, 'pitch': 7.36, 'roll': -5.83}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 126, 'completeness': 1}}]}}
+[1310.17, 862, 456.32, 798]
+INFO:     1.24.25.54:18129 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1623929306, 'timestamp': 1645255623, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '61e2e1d1913c1f218b0754fbca902a90', 'location': {'left': 497.34, 'top': 1243.26, 'width': 794, 'height': 864, 'rotation': -2}, 'face_probability': 1, 'angle': {'yaw': -2.67, 'pitch': 6.5, 'roll': -3.95}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 124, 'completeness': 1}}]}}
+[1243.26, 864, 497.34, 794]
+INFO:     1.24.25.54:18133 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1630589480, 'timestamp': 1645255630, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '74e722483621bdcfa0c977dec2dc79cf', 'location': {'left': 439.84, 'top': 1424.92, 'width': 720, 'height': 798, 'rotation': -2}, 'face_probability': 1, 'angle': {'yaw': 3.98, 'pitch': 1.09, 'roll': -6.03}, 'quality': {'occlusion': {'left_eye': 0.01, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 101, 'completeness': 1}}]}}
+[1424.92, 798, 439.84, 720]
+INFO:     1.24.25.54:18146 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1636587071, 'timestamp': 1645255636, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '5000d9f17f3bcb0b767237db48e649fa', 'location': {'left': 299.79, 'top': 1386.78, 'width': 948, 'height': 1057, 'rotation': -4}, 'face_probability': 1, 'angle': {'yaw': -5.2, 'pitch': 14.68, 'roll': -3.79}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.04, 'right_cheek': 0.08, 'chin_contour': 0.01}, 'blur': 0, 'illumination': 102, 'completeness': 1}}]}}
+[1386.78, 1057, 299.79, 948]
+INFO:     1.24.25.54:18149 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1638305654, 'timestamp': 1645255638, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '4781d2f407f82b48cc0d813482304ce5', 'location': {'left': 423.2, 'top': 1170.39, 'width': 898, 'height': 863, 'rotation': -2}, 'face_probability': 1, 'angle': {'yaw': -1.68, 'pitch': 15.13, 'roll': -4.71}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0.64, 'left_cheek': 0.02, 'right_cheek': 0.03, 'chin_contour': 0.7}, 'blur': 0, 'illumination': 122, 'completeness': 1}}]}}
+[1170.39, 863, 423.2, 898]
+INFO:     1.24.25.54:18152 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1644035861, 'timestamp': 1645255644, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '61ac11597cad8739d93c2c8403e195f5', 'location': {'left': 309.07, 'top': 1422.69, 'width': 827, 'height': 923, 'rotation': -5}, 'face_probability': 1, 'angle': {'yaw': -0.5, 'pitch': 5.35, 'roll': -6.57}, 'quality': {'occlusion': {'left_eye': 0.01, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0.01, 'chin_contour': 0}, 'blur': 0, 'illumination': 91, 'completeness': 1}}]}}
+[1422.69, 923, 309.07, 827]
+INFO:     1.24.25.54:18153 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1662666511, 'timestamp': 1645255662, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '5179f97cb0dc035a72483295bcab9588', 'location': {'left': 446.71, 'top': 1355.81, 'width': 744, 'height': 820, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 2.93, 'pitch': 6.75, 'roll': -1.78}, 'quality': {'occlusion': {'left_eye': 0.01, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 97, 'completeness': 1}}]}}
+[1355.81, 820, 446.71, 744]
+INFO:     1.24.25.54:18167 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1666058975, 'timestamp': 1645255666, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '8d89da0020a2caa683b0a5ef803ed120', 'location': {'left': 464.28, 'top': 1261.58, 'width': 710, 'height': 750, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': 6.49, 'pitch': 7.13, 'roll': -4.67}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 97, 'completeness': 1}}]}}
+[1261.58, 750, 464.28, 710]
+INFO:     1.24.25.54:18168 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1674048240, 'timestamp': 1645255674, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'b72f4f9dfea8ec73922efbbaa41908c0', 'location': {'left': 443.19, 'top': 1354.26, 'width': 833, 'height': 919, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': 4.56, 'pitch': 8.51, 'roll': -5.26}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 107, 'completeness': 1}}]}}
+[1354.26, 919, 443.19, 833]
+INFO:     1.24.25.54:18173 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1679492550, 'timestamp': 1645255679, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '662d22b6ec63cdc306de12b8d6aea513', 'location': {'left': 306.47, 'top': 1363.14, 'width': 1218, 'height': 1323, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': -3.23, 'pitch': 11.99, 'roll': -0.86}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.02, 'right_cheek': 0.04, 'chin_contour': 0.18}, 'blur': 0, 'illumination': 121, 'completeness': 0}}]}}
+[1363.14, 1323, 306.47, 1218]
+INFO:     1.24.25.54:18174 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1681865374, 'timestamp': 1645255681, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'c2b55dd0024be861e4dd35afc4d2e77e', 'location': {'left': 369.59, 'top': 1023.66, 'width': 1161, 'height': 1312, 'rotation': -1}, 'face_probability': 1, 'angle': {'yaw': 0.41, 'pitch': 11.3, 'roll': -3.21}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.04, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 119, 'completeness': 1}}]}}
+[1023.66, 1312, 369.59, 1161]
+INFO:     1.24.25.54:18178 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1684408641, 'timestamp': 1645255684, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'b841889937f275bcd9161723615b6812', 'location': {'left': 267.52, 'top': 1531.76, 'width': 1087, 'height': 1156, 'rotation': -5}, 'face_probability': 1, 'angle': {'yaw': 5.8, 'pitch': 17.31, 'roll': -6.74}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0.02, 'chin_contour': 0.06}, 'blur': 0, 'illumination': 118, 'completeness': 0}}]}}
+[1531.76, 1156, 267.52, 1087]
+INFO:     1.24.25.54:18179 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1696614563, 'timestamp': 1645255696, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'f42f96f2095094b55015c2a13c03933a', 'location': {'left': 36.38, 'top': 1704.95, 'width': 1286, 'height': 1118, 'rotation': -11}, 'face_probability': 1, 'angle': {'yaw': -0.78, 'pitch': 4.86, 'roll': -8.59}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0.01, 'mouth': 0.36, 'left_cheek': 0.04, 'right_cheek': 0.01, 'chin_contour': 0.28}, 'blur': 0.04, 'illumination': 38, 'completeness': 0}}]}}
+[1704.95, 1118, 36.38, 1286]
+INFO:     1.24.25.54:18192 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1702536547, 'timestamp': 1645255702, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '7b33938c53519cc437b0761d29d82553', 'location': {'left': 366.54, 'top': 1251.91, 'width': 1042, 'height': 1252, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 1.58, 'pitch': 9.8, 'roll': -0.97}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0.04, 'nose': 0, 'mouth': 0, 'left_cheek': 0.07, 'right_cheek': 0.04, 'chin_contour': 0}, 'blur': 0, 'illumination': 112, 'completeness': 1}}]}}
+[1251.91, 1252, 366.54, 1042]
+INFO:     1.24.25.54:18195 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1766193005, 'timestamp': 1645255766, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'f13443a3c7ba72081ddb7ac7bce2aa35', 'location': {'left': 596.75, 'top': 1438.77, 'width': 587, 'height': 623, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': 9.02, 'pitch': 5.15, 'roll': -6.55}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 88, 'completeness': 1}}]}}
+[1438.77, 623, 596.75, 587]
+INFO:     1.24.25.54:18542 - "POST /detect HTTP/1.1" 200 OK
+INFO:     1.24.25.54:18546 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1775557632, 'timestamp': 1645255775, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'b3bc4ac3dfa656d559834441c75640fb', 'location': {'left': 628.27, 'top': 1249.73, 'width': 631, 'height': 670, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 1.18, 'pitch': 8.39, 'roll': -1.86}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 115, 'completeness': 1}}]}}
+[1249.73, 670, 628.27, 631]
+INFO:     1.24.25.54:18548 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1783450030, 'timestamp': 1645255783, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '6a998df1aacdf0d9505160856682ba1d', 'location': {'left': 554.67, 'top': 1394.43, 'width': 642, 'height': 690, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 6.93, 'pitch': 4.54, 'roll': -2.81}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 116, 'completeness': 1}}]}}
+[1394.43, 690, 554.67, 642]
+INFO:     1.24.25.54:18555 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1787669444, 'timestamp': 1645255787, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'f2458bd473a26a587f9028ebd6b1db5c', 'location': {'left': 697.26, 'top': 1270.03, 'width': 591, 'height': 630, 'rotation': -1}, 'face_probability': 1, 'angle': {'yaw': 1.99, 'pitch': 3.13, 'roll': -3.3}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 114, 'completeness': 1}}]}}
+[1270.03, 630, 697.26, 591]
+INFO:     1.24.25.54:18556 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1792123112, 'timestamp': 1645255792, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '88bfc3f37741dc5b0202774909bd8120', 'location': {'left': 587.95, 'top': 1253.16, 'width': 635, 'height': 674, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': 2.37, 'pitch': 4.39, 'roll': -1.96}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 118, 'completeness': 1}}]}}
+[1253.16, 674, 587.95, 635]
+INFO:     1.24.25.54:18559 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1796206404, 'timestamp': 1645255796, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'd69b780b0e1c0a23347e1432353ab819', 'location': {'left': 529.79, 'top': 1213.91, 'width': 640, 'height': 682, 'rotation': -2}, 'face_probability': 1, 'angle': {'yaw': 1.49, 'pitch': 0.99, 'roll': -4.79}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 118, 'completeness': 1}}]}}
+[1213.91, 682, 529.79, 640]
+INFO:     1.24.25.54:18562 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1800969203, 'timestamp': 1645255800, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '93fcf9558854e670d8dda96a6f96a054', 'location': {'left': 406.89, 'top': 1316.91, 'width': 1257, 'height': 1379, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': -0.65, 'pitch': 13.89, 'roll': -1.21}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.02, 'right_cheek': 0.03, 'chin_contour': 0.16}, 'blur': 0, 'illumination': 135, 'completeness': 0}}]}}
+[1316.91, 1379, 406.89, 1257]
+INFO:     1.24.25.54:18565 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1805521364, 'timestamp': 1645255805, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'a1e92a1d2d9e3d16430689218c2886e1', 'location': {'left': 563.33, 'top': 1282.89, 'width': 721, 'height': 776, 'rotation': -1}, 'face_probability': 1, 'angle': {'yaw': 4.07, 'pitch': 8.12, 'roll': -3.6}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 124, 'completeness': 1}}]}}
+[1282.89, 776, 563.33, 721]
+INFO:     1.24.25.54:18567 - "POST /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1809751653, 'timestamp': 1645255809, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'c518ca870f7553259546f06ed47011f5', 'location': {'left': 506.79, 'top': 1349.71, 'width': 727, 'height': 795, 'rotation': 0}, 'face_probability': 1, 'angle': {'yaw': -0.49, 'pitch': 4.67, 'roll': -2.3}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.01, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 122, 'completeness': 1}}]}}
+[1349.71, 795, 506.79, 727]
+INFO:     1.24.25.54:18570 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48983 - "OPTIONS /detect HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1048337624, 'timestamp': 1645258648, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'a5d2306d14f62360408e5a421dcb1911', 'location': {'left': 275.33, 'top': 4.77, 'width': 232, 'height': 210, 'rotation': -4}, 'face_probability': 1, 'angle': {'yaw': 5.64, 'pitch': -25.26, 'roll': -5.53}, 'quality': {'occlusion': {'left_eye': 0.18, 'right_eye': 0.18, 'nose': 0, 'mouth': 0.21, 'left_cheek': 0.1, 'right_cheek': 0.04, 'chin_contour': 0.23}, 'blur': 0, 'illumination': 133, 'completeness': 0}}]}}
+[4.77, 210, 275.33, 232]
+INFO:     111.42.148.210:48983 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48983 - "OPTIONS /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48983 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48983 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.210:62362 - "POST /match HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1052434339, 'timestamp': 1645258652, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '8bf33250fbf209ef3bc53ddb8f7794df', 'location': {'left': 215.87, 'top': 50.91, 'width': 228, 'height': 241, 'rotation': -9}, 'face_probability': 1, 'angle': {'yaw': 2.87, 'pitch': -18.91, 'roll': -4.96}, 'quality': {'occlusion': {'left_eye': 0.02, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.07, 'right_cheek': 0.01, 'chin_contour': 0.01}, 'blur': 0, 'illumination': 131, 'completeness': 1}}]}}
+[50.91, 241, 215.87, 228]
+INFO:     111.42.148.210:48106 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48106 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48106 - "POST /match HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1059323405, 'timestamp': 1645258659, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': 'bf9aff1468d831af133d0420f56a2008', 'location': {'left': 204.83, 'top': 78.87, 'width': 236, 'height': 260, 'rotation': -10}, 'face_probability': 1, 'angle': {'yaw': 6.93, 'pitch': -8.41, 'roll': -10.01}, 'quality': {'occlusion': {'left_eye': 0.01, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.13, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 129, 'completeness': 1}}]}}
+[78.87, 260, 204.83, 236]
+INFO:     111.42.148.210:55632 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.210:55632 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:55632 - "POST /match HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1133519924, 'timestamp': 1645258733, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '4bddfdf44566cbe60d97f4f1c2cafd26', 'location': {'left': 61.41, 'top': 128.11, 'width': 569, 'height': 614, 'rotation': -3}, 'face_probability': 1, 'angle': {'yaw': 6.24, 'pitch': 7.68, 'roll': -5.95}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.06, 'right_cheek': 0.02, 'chin_contour': 0.01}, 'blur': 0, 'illumination': 137, 'completeness': 1}}]}}
+[128.11, 614, 61.41, 569]
+INFO:     111.42.148.210:48401 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48401 - "OPTIONS /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.210:48401 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.210:35587 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.210:35587 - "OPTIONS /test HTTP/1.1" 200 OK
+2
+<__main__.mae_args object at 0x7faa351dcf40>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 32552
+SUCCESS
+测试得分为 92.13809204
+相应附加值为 2
+INFO:     111.42.148.210:35587 - "POST /test HTTP/1.1" 200 OK
+INFO:     111.42.148.210:35587 - "OPTIONS /signup HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7faa351dc670>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 32552
+INFO:     111.42.148.210:37937 - "POST /signup HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1193639980, 'timestamp': 1645258793, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '384e2bc335dff5bf5ccead7571918c4e', 'location': {'left': 257.26, 'top': 71.09, 'width': 225, 'height': 252, 'rotation': -7}, 'face_probability': 1, 'angle': {'yaw': 0.33, 'pitch': -5.19, 'roll': -7.48}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.23, 'right_cheek': 0, 'chin_contour': 0}, 'blur': 0, 'illumination': 122, 'completeness': 1}}]}}
+[71.09, 252, 257.26, 225]
+INFO:     111.42.148.210:58623 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7faa351dcd90>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 32552
+seed是: 32552
+INFO:     111.42.148.210:58623 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:58623 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.210:58623 - "OPTIONS /user/info?token=111234 HTTP/1.1" 200 OK
+INFO:     111.42.148.210:58623 - "GET /user/info?token=111234 HTTP/1.1" 200 OK
+INFO:     111.42.148.210:40943 - "OPTIONS /user/logout HTTP/1.1" 200 OK
+INFO:     111.42.148.210:40943 - "GET /user/logout HTTP/1.1" 200 OK
+{'error_code': 0, 'error_msg': 'SUCCESS', 'log_id': 1291878209, 'timestamp': 1645258891, 'cached': 0, 'result': {'face_num': 1, 'face_list': [{'face_token': '054713428a7d67d42f71e5f8c36947f7', 'location': {'left': 254.38, 'top': 76.42, 'width': 224, 'height': 254, 'rotation': -4}, 'face_probability': 1, 'angle': {'yaw': -1.12, 'pitch': -1.32, 'roll': -5.72}, 'quality': {'occlusion': {'left_eye': 0, 'right_eye': 0, 'nose': 0, 'mouth': 0, 'left_cheek': 0.24, 'right_cheek': 0.01, 'chin_contour': 0}, 'blur': 0, 'illumination': 132, 'completeness': 1}}]}}
+[76.42, 254, 254.38, 224]
+INFO:     111.42.148.210:46641 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7faa34ee3280>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 32552
+seed是: 32552
+INFO:     111.42.148.210:46641 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.210:46641 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.210:46641 - "GET /user/info?token=111234 HTTP/1.1" 200 OK
+INFO:     111.42.148.210:36171 - "GET /user/logout HTTP/1.1" 200 OK

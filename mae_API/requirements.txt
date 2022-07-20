@@ -1,0 +1,21 @@
+torch==1.8.0
+torchvision==0.9.0
+timm==0.3.2
+Pillow~=9.0.0
+blobfile
+mypy
+numpy~=1.22.1
+pytest
+requests
+einops~=0.4.0
+tensorboardX~=2.4.1
+# deepspeed==0.4.0
+scipy~=1.7.3
+baidu-aip
+mysql
+mysql-connector
+fastapi~=0.73.0
+SQLAlchemy~=1.4.31
+opencv-python~=4.5.5.62
+uvicorn~=0.17.1
+pydantic~=1.9.0

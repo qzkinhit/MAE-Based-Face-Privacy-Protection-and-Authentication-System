@@ -1,0 +1,1556 @@
+INFO:     Started server process [31272]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:12340 (Press CTRL+C to quit)
+[140.05, 164, 447.95, 174]
+mask_status: 0
+INFO:     127.0.0.1:42906 - "POST /detect HTTP/1.1" 200 OK
+[140.05, 164, 447.95, 174]
+mask_status: 0
+INFO:     127.0.0.1:42926 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f8554bb0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390853
+SUCCESS
+当前附加值为 31
+测试得分为 85.78795624
+<__main__.mae_args object at 0x7f93f5007220>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390854
+SUCCESS
+测试得分为 92.18563843
+相应附加值为 32
+INFO:     127.0.0.1:42932 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f5007220>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1585390854
+INFO:     127.0.0.1:42948 - "POST /signup HTTP/1.1" 200 OK
+[138.96, 168, 447.58, 175]
+mask_status: 0
+INFO:     127.0.0.1:42966 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f5007220>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     127.0.0.1:42972 - "POST /rec HTTP/1.1" 200 OK
+[138.96, 168, 447.58, 175]
+mask_status: 0
+INFO:     127.0.0.1:42986 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50079d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     127.0.0.1:42992 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42998 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.23:50194 - "OPTIONS /detect HTTP/1.1" 200 OK
+[174.51, 218, 452.17, 231]
+mask_status: 0
+INFO:     111.42.148.23:50194 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.23:50194 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f406c550>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 4123935498
+seed是: 4123935498
+INFO:     111.42.148.23:36864 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.23:36864 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.23:50194 - "POST /match HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.40.58.170:56071 - "POST /detect HTTP/1.1" 200 OK
+[481.83, 312, 224.13, 287]
+mask_status: 0
+INFO:     111.40.58.170:46455 - "POST /detect HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.40.58.170:47366 - "POST /detect HTTP/1.1" 200 OK
+[481.83, 312, 224.13, 287]
+mask_status: 0
+INFO:     111.40.58.170:34954 - "POST /detect HTTP/1.1" 200 OK
+INFO:     113.5.8.251:50689 - "POST /checkusername HTTP/1.1" 200 OK
+[497.15, 345, 200.74, 316]
+mask_status: 1
+INFO:     113.5.8.251:50690 - "POST /detect HTTP/1.1" 200 OK
+INFO:     113.5.8.251:50691 - "POST /checkusername HTTP/1.1" 200 OK
+[486, 326, 190.46, 312]
+mask_status: 1
+INFO:     113.5.8.251:50692 - "POST /detect HTTP/1.1" 200 OK
+[488.36, 334, 189.29, 311]
+mask_status: 1
+INFO:     113.5.8.251:50693 - "POST /detect HTTP/1.1" 200 OK
+[483.04, 332, 188.26, 315]
+mask_status: 1
+INFO:     113.5.8.251:50694 - "POST /detect HTTP/1.1" 200 OK
+[459.7, 297, 224.2, 281]
+mask_status: 0
+INFO:     113.5.8.251:50695 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4072cd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 91.15703583
+相应附加值为 31
+INFO:     113.5.8.251:50696 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f504d7c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     113.5.8.251:50697 - "POST /signup HTTP/1.1" 200 OK
+INFO:     111.42.148.23:47162 - "OPTIONS /detect HTTP/1.1" 200 OK
+[163.32, 270, 433.13, 288]
+mask_status: 0
+INFO:     111.42.148.23:47162 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.23:47162 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404f970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 2245559588
+seed是: 2245559588
+INFO:     111.42.148.23:47730 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.23:47730 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.23:47162 - "POST /match HTTP/1.1" 200 OK
+[111.84, 207, 455.86, 209]
+mask_status: 0
+INFO:     127.0.0.1:45932 - "POST /detect HTTP/1.1" 200 OK
+[111.84, 207, 455.86, 209]
+mask_status: 0
+INFO:     127.0.0.1:45960 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f427be50>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1585390853
+SUCCESS
+测试得分为 94.36499786
+相应附加值为 31
+INFO:     127.0.0.1:45966 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff9c730>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1585390853
+INFO:     127.0.0.1:45974 - "POST /signup HTTP/1.1" 200 OK
+[161.34, 267, 461.64, 280]
+mask_status: 0
+INFO:     111.42.148.23:51034 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff15340>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 2245559587
+seed是: 2245559587
+INFO:     111.42.148.23:51034 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.23:51034 - "POST /match HTTP/1.1" 200 OK
+[159.55, 278, 446.39, 285]
+mask_status: 0
+INFO:     111.42.148.23:49373 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff15220>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 2245559587
+seed是: 2245559587
+INFO:     111.42.148.23:49373 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.23:49373 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:50705 - "POST /checkusername HTTP/1.1" 200 OK
+[492.75, 312, 209.96, 289]
+mask_status: 1
+INFO:     113.5.8.251:50706 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404fac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 91.03829956
+相应附加值为 31
+INFO:     113.5.8.251:50707 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6790>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     113.5.8.251:50708 - "POST /signup HTTP/1.1" 200 OK
+[450.83, 330, 193.5, 309]
+mask_status: 0
+INFO:     113.5.8.251:50711 - "POST /detect HTTP/1.1" 200 OK
+[439.95, 328, 206.99, 308]
+mask_status: 0
+INFO:     113.5.8.251:50712 - "POST /detect HTTP/1.1" 200 OK
+[475.75, 347, 223.28, 305]
+mask_status: 1
+INFO:     113.5.8.251:50713 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f504d8b0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     113.5.8.251:50714 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:50715 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:50716 - "POST /checkusername HTTP/1.1" 200 OK
+[454.77, 312, 212.13, 296]
+mask_status: 0
+INFO:     113.5.8.251:50717 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6d90>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 94.04936218
+相应附加值为 31
+INFO:     113.5.8.251:51245 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50d82b0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     113.5.8.251:51246 - "POST /signup HTTP/1.1" 200 OK
+[414.27, 309, 210.15, 306]
+mask_status: 1
+INFO:     113.5.8.251:51247 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50d80d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     113.5.8.251:51248 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51249 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51250 - "POST /checkusername HTTP/1.1" 200 OK
+[468.34, 319, 200.69, 297]
+mask_status: 1
+INFO:     113.5.8.251:51251 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f42a5040>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980716
+seed是: 3216980716
+INFO:     113.5.8.251:51252 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51253 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51254 - "POST /checkusername HTTP/1.1" 200 OK
+[437.7, 318, 215.76, 295]
+mask_status: 1
+INFO:     113.5.8.251:51255 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff9c9a0>
+Creating model: pretrain_mae_base_patch16_224
+[442.35, 320, 209.92, 296]
+mask_status: 1
+INFO:     113.5.8.251:51257 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 94.28658295
+相应附加值为 31
+INFO:     113.5.8.251:51256 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f426a3a0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     113.5.8.251:51258 - "POST /signup HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51259 - "POST /checkusername HTTP/1.1" 200 OK
+[478.11, 307, 202.53, 292]
+mask_status: 0
+INFO:     113.5.8.251:51260 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f504d730>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     113.5.8.251:51261 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51262 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51263 - "POST /checkusername HTTP/1.1" 200 OK
+[480.69, 299, 217.8, 271]
+mask_status: 1
+INFO:     113.5.8.251:51264 - "POST /detect HTTP/1.1" 200 OK
+[481.29, 307, 206.02, 277]
+mask_status: 1
+INFO:     113.5.8.251:51265 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff10b80>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     113.5.8.251:51266 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51267 - "POST /match HTTP/1.1" 200 OK
+[179.67, 168, 477.81, 178]
+mask_status: 0
+INFO:     127.0.0.1:46444 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50a3190>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:46450 - "POST /rec HTTP/1.1" 200 OK
+[179.67, 168, 477.81, 178]
+mask_status: 0
+INFO:     127.0.0.1:46480 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50a3250>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390853
+seed是: 1585390853
+INFO:     127.0.0.1:46486 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46494 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51867 - "POST /checkusername HTTP/1.1" 200 OK
+[525.97, 314, 196.7, 284]
+mask_status: 0
+INFO:     113.5.8.251:51870 - "POST /detect HTTP/1.1" 200 OK
+[669.21, 327, 178.85, 302]
+mask_status: 0
+INFO:     113.5.8.251:51871 - "POST /detect HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51872 - "POST /detect HTTP/1.1" 200 OK
+[523.1, 306, 211.84, 273]
+mask_status: 1
+INFO:     113.5.8.251:51873 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6e50>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     113.5.8.251:51874 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51875 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51876 - "POST /checkusername HTTP/1.1" 200 OK
+[459.63, 265, 176.01, 248]
+mask_status: 1
+INFO:     113.5.8.251:51877 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4118be0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+当前附加值为 31
+测试得分为 87.18544006
+<__main__.mae_args object at 0x7f93f426fdf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980712
+SUCCESS
+当前附加值为 32
+测试得分为 83.21585083
+<__main__.mae_args object at 0x7f93f425af10>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980713
+SUCCESS
+测试得分为 90.84389496
+相应附加值为 33
+INFO:     113.5.8.251:51878 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f426f040>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980713
+INFO:     113.5.8.251:51879 - "POST /signup HTTP/1.1" 200 OK
+[479.03, 282, 227.67, 267]
+mask_status: 1
+INFO:     113.5.8.251:51880 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff19160>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980713
+seed是: 3216980713
+INFO:     113.5.8.251:51881 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.251:51882 - "POST /match HTTP/1.1" 200 OK
+INFO:     118.89.64.146:46357 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.23:38019 - "OPTIONS /detect HTTP/1.1" 200 OK
+[273.91, 218, 464.92, 227]
+mask_status: 0
+INFO:     111.42.148.23:38019 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.23:38019 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6fd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.42.148.23:38019 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.23:38019 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.42.148.23:41924 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.23:41924 - "OPTIONS /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.42.148.23:41924 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     61.151.178.197:43407 - "GET /checkusername HTTP/1.1" 405 Method Not Allowed
+INFO:     111.42.148.141:60052 - "POST /checkusername HTTP/1.1" 200 OK
+[315.82, 317, 205.49, 325]
+mask_status: 0
+INFO:     111.42.148.141:56109 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa69d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1256948775
+SUCCESS
+当前附加值为 31
+测试得分为 82.03444672
+<__main__.mae_args object at 0x7f93f40726d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1256948776
+SUCCESS
+测试得分为 90.92227936
+相应附加值为 32
+INFO:     111.42.148.141:58610 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f40726d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1256948776
+INFO:     111.42.148.141:38737 - "POST /signup HTTP/1.1" 200 OK
+INFO:     111.42.148.141:45921 - "POST /checkusername HTTP/1.1" 200 OK
+[359.39, 325, 220.75, 326]
+mask_status: 0
+INFO:     111.42.148.141:49076 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.141:40319 - "POST /rec HTTP/1.1" 200 OK
+[882.07, 267, 225.49, 255]
+mask_status: 0
+INFO:     111.42.148.141:55485 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.141:36796 - "POST /rec HTTP/1.1" 200 OK
+[573.38, 450, 155.17, 451]
+mask_status: 0
+INFO:     111.42.148.141:47923 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.141:49595 - "POST /rec HTTP/1.1" 200 OK
+[343.65, 294, 223.59, 291]
+mask_status: 0
+INFO:     111.42.148.141:44408 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.141:33058 - "POST /rec HTTP/1.1" 200 OK
+[311.49, 278, 211, 272]
+mask_status: 0
+INFO:     111.42.148.141:33575 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4049820>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1256948776
+seed是: 1256948776
+INFO:     111.42.148.141:46907 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.141:61823 - "POST /match HTTP/1.1" 200 OK
+[553.35, 313, 243.99, 290]
+mask_status: 0
+INFO:     111.42.148.141:62772 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4047400>
+Creating model: pretrain_mae_base_patch16_224
+[237.62, 346, 175.66, 337]
+mask_status: 0
+INFO:     111.42.148.141:62475 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1256948776
+seed是: 1256948776
+INFO:     111.42.148.141:46113 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.141:56028 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.141:44366 - "POST /checkusername HTTP/1.1" 200 OK
+[490.9, 499, 202.81, 538]
+mask_status: 0
+INFO:     111.42.148.141:46722 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50dffd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 95.88890076
+相应附加值为 31
+INFO:     111.42.148.141:50037 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50dffd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     111.42.148.141:41900 - "POST /signup HTTP/1.1" 200 OK
+INFO:     106.55.200.47:29091 - "GET / HTTP/1.1" 404 Not Found
+INFO:     106.55.202.41:64452 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.42.148.203:40412 - "POST /checkusername HTTP/1.1" 200 OK
+[458.43, 338, 196.91, 318]
+mask_status: 1
+INFO:     111.42.148.203:49931 - "POST /detect HTTP/1.1" 200 OK
+[487.69, 333, 199.44, 317]
+mask_status: 1
+INFO:     111.42.148.203:54542 - "POST /detect HTTP/1.1" 200 OK
+[447.54, 327, 187.88, 325]
+mask_status: 1
+INFO:     111.42.148.203:37308 - "POST /detect HTTP/1.1" 200 OK
+[481.83, 312, 224.13, 287]
+mask_status: 0
+INFO:     111.42.148.161:47842 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4049be0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 2335277038
+seed是: 2335277038
+INFO:     111.42.148.161:56726 - "POST /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff3bb20>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466874
+seed是: 3233466874
+INFO:     111.42.148.161:57720 - "POST /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff19430>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1193605008
+seed是: 1193605008
+INFO:     111.42.148.161:52068 - "POST /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50dfdf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 671510290
+seed是: 671510290
+INFO:     111.42.148.161:55953 - "POST /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6490>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1193605008
+seed是: 1193605008
+INFO:     111.42.148.161:46896 - "POST /rec HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.42.148.161:45217 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f42281c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980713
+seed是: 3216980713
+INFO:     111.42.148.161:41067 - "POST /rec HTTP/1.1" 200 OK
+[481.83, 312, 224.13, 287]
+mask_status: 0
+INFO:     111.42.148.161:43095 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50dffd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1398285806
+seed是: 1398285806
+INFO:     111.42.148.161:43296 - "POST /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff3baf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1725587678
+seed是: 1725587678
+INFO:     111.42.148.161:41584 - "POST /rec HTTP/1.1" 200 OK
+[446.01, 324, 184.08, 308]
+mask_status: 1
+INFO:     111.42.148.203:34250 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.203:61970 - "POST /rec HTTP/1.1" 200 OK
+[480.85, 318, 204.38, 293]
+mask_status: 1
+INFO:     111.42.148.203:40592 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4228ac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+[479.43, 329, 206.54, 296]
+mask_status: 1
+INFO:     111.42.148.203:51836 - "POST /detect HTTP/1.1" 200 OK
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.203:34542 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.203:56521 - "POST /match HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.42.148.161:54335 - "POST /detect HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.42.148.161:41744 - "POST /detect HTTP/1.1" 200 OK
+[403.97, 317, 232.46, 297]
+mask_status: 1
+INFO:     111.42.148.161:59727 - "POST /detect HTTP/1.1" 200 OK
+[492.41, 334, 196.99, 331]
+mask_status: 1
+INFO:     111.42.148.203:50680 - "POST /detect HTTP/1.1" 200 OK
+[727.99, 282, 176.68, 326]
+mask_status: 1
+INFO:     111.42.148.203:55434 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.203:35604 - "POST /checkusername HTTP/1.1" 200 OK
+[475.05, 404, 170.66, 373]
+mask_status: 0
+INFO:     111.42.148.203:55633 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404cdf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466874
+SUCCESS
+当前附加值为 31
+测试得分为 84.28608704
+<__main__.mae_args object at 0x7f93eff844f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466875
+SUCCESS
+当前附加值为 32
+测试得分为 79.96366119
+<__main__.mae_args object at 0x7f93f425abe0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466876
+SUCCESS
+测试得分为 91.44976807
+相应附加值为 33
+INFO:     111.42.148.203:37560 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff19370>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3233466876
+INFO:     111.42.148.203:34725 - "POST /signup HTTP/1.1" 200 OK
+[464.13, 374, 196.98, 348]
+mask_status: 0
+INFO:     111.42.148.203:37323 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff9c670>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466876
+seed是: 3233466876
+INFO:     111.42.148.203:53103 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.203:56542 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.203:60571 - "POST /checkusername HTTP/1.1" 200 OK
+[463.34, 320, 183.36, 329]
+mask_status: 1
+INFO:     111.42.148.203:33592 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6be0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980713
+seed是: 3216980713
+INFO:     111.42.148.203:62496 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.203:35313 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.203:47067 - "POST /checkusername HTTP/1.1" 200 OK
+[443.99, 339, 195.95, 327]
+mask_status: 1
+INFO:     111.42.148.203:39784 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6610>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 92.32850647
+相应附加值为 31
+INFO:     111.42.148.203:34392 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff19fd0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     111.42.148.203:46157 - "POST /signup HTTP/1.1" 200 OK
+[451.24, 313, 198.57, 302]
+mask_status: 1
+INFO:     111.42.148.203:42406 - "POST /detect HTTP/1.1" 200 OK
+[521.46, 319, 174.35, 303]
+mask_status: 1
+INFO:     111.42.148.203:35578 - "POST /detect HTTP/1.1" 200 OK
+INFO:     162.14.17.157:28991 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     167.94.138.120:53246 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.120:40782 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     129.211.162.158:48356 - "GET / HTTP/1.1" 404 Not Found
+INFO:     129.211.162.158:48356 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.192.164.76:34673 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.42.148.99:49709 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.99:47614 - "POST /checkusername HTTP/1.1" 200 OK
+[369.29, 359, 213.9, 359]
+mask_status: 0
+INFO:     111.42.148.99:38451 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f504d970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1725587677
+SUCCESS
+测试得分为 94.40624237
+相应附加值为 31
+INFO:     111.42.148.99:48246 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41e2070>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1725587677
+INFO:     111.42.148.99:37455 - "POST /signup HTTP/1.1" 200 OK
+[391.7, 328, 203.7, 322]
+mask_status: 0
+INFO:     111.42.148.99:50597 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404faf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1725587677
+seed是: 1725587677
+INFO:     111.42.148.99:49180 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.99:36471 - "POST /match HTTP/1.1" 200 OK
+INFO:     113.5.8.36:8586 - "POST /checkusername HTTP/1.1" 200 OK
+[519.53, 337, 222.54, 309]
+mask_status: 0
+INFO:     113.5.8.36:8587 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41e2130>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466874
+SUCCESS
+当前附加值为 31
+测试得分为 76.81436157
+<__main__.mae_args object at 0x7f93eff197f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466875
+SUCCESS
+当前附加值为 32
+测试得分为 85.29491425
+<__main__.mae_args object at 0x7f93f50d8100>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466876
+SUCCESS
+测试得分为 91.80253601
+相应附加值为 33
+INFO:     113.5.8.36:8588 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f427b340>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3233466876
+INFO:     113.5.8.36:9054 - "POST /signup HTTP/1.1" 200 OK
+[534.57, 322, 216.95, 300]
+mask_status: 0
+INFO:     113.5.8.36:9055 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff153d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466876
+seed是: 3233466876
+INFO:     113.5.8.36:9056 - "POST /rec HTTP/1.1" 200 OK
+INFO:     113.5.8.36:9057 - "POST /match HTTP/1.1" 200 OK
+INFO:     167.248.133.61:46490 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.61:48652 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/usr/python/python388/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/python/python388/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 129, in handle_events
+    event = self.conn.next_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/python/python388/lib/python3.8/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+INFO:     111.42.148.135:45047 - "POST /checkusername HTTP/1.1" 200 OK
+[449.89, 270, 238.97, 262]
+mask_status: 0
+INFO:     111.42.148.135:48891 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f40474c0>
+Creating model: pretrain_mae_base_patch16_224
+[460.25, 269, 230.17, 262]
+mask_status: 0
+INFO:     111.42.148.135:59851 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 2388631903
+SUCCESS
+测试得分为 94.75352478
+相应附加值为 31
+INFO:     111.42.148.135:45332 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f40474c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 2388631903
+INFO:     111.42.148.135:61339 - "POST /signup HTTP/1.1" 200 OK
+[423.13, 276, 216.96, 265]
+mask_status: 0
+INFO:     111.42.148.135:54377 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6370>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 2388631903
+seed是: 2388631903
+INFO:     111.42.148.135:54212 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:48670 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.135:38895 - "POST /checkusername HTTP/1.1" 200 OK
+[445.83, 268, 231.78, 257]
+mask_status: 0
+INFO:     111.42.148.135:36922 - "POST /detect HTTP/1.1" 200 OK
+[453.41, 269, 234.42, 253]
+mask_status: 0
+INFO:     111.42.148.135:44953 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:43540 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.135:50392 - "POST /detect HTTP/1.1" 200 OK
+[437.32, 282, 233.58, 272]
+mask_status: 0
+INFO:     111.42.148.135:35935 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f406cf70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 93.88612366
+相应附加值为 31
+INFO:     111.42.148.135:33296 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f427b310>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     111.42.148.135:51593 - "POST /signup HTTP/1.1" 200 OK
+[455.62, 306, 215.13, 288]
+mask_status: 1
+INFO:     111.42.148.135:49191 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404cac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:38214 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:50269 - "POST /match HTTP/1.1" 200 OK
+[429.71, 308, 214.13, 282]
+mask_status: 1
+INFO:     111.42.148.135:47150 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4049d30>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:54101 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:44252 - "POST /match HTTP/1.1" 200 OK
+[436.77, 318, 211.73, 297]
+mask_status: 1
+INFO:     111.42.148.135:51681 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f427bfa0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:57210 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:41909 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.135:54017 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     111.42.148.135:50919 - "POST /checkusername HTTP/1.1" 200 OK
+[443.36, 310, 226.48, 292]
+mask_status: 1
+INFO:     111.42.148.135:58896 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404c8b0>
+Creating model: pretrain_mae_base_patch16_224
+[441.9, 313, 206.85, 296]
+mask_status: 1
+INFO:     111.42.148.135:57913 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 92.13624573
+相应附加值为 31
+INFO:     111.42.148.135:43440 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f50d8040>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     111.42.148.135:33467 - "POST /signup HTTP/1.1" 200 OK
+INFO:     111.42.148.135:34323 - "POST /checkusername HTTP/1.1" 200 OK
+[434.45, 301, 225.33, 287]
+mask_status: 0
+INFO:     111.42.148.135:38138 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f42284f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+测试得分为 93.44609833
+相应附加值为 31
+INFO:     111.42.148.135:52670 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41e2c10>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980711
+INFO:     111.42.148.135:34447 - "POST /signup HTTP/1.1" 200 OK
+[428.3, 296, 200.66, 292]
+mask_status: 0
+INFO:     111.42.148.135:42025 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4228910>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:51086 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:45039 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.42.148.135:53676 - "POST /checkusername HTTP/1.1" 200 OK
+[538.41, 230, 273.56, 249]
+mask_status: 0
+INFO:     111.42.148.135:51376 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:60237 - "POST /checkusername HTTP/1.1" 200 OK
+[458.9, 275, 247.21, 265]
+mask_status: 0
+INFO:     111.42.148.135:41291 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff3b970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980711
+SUCCESS
+当前附加值为 31
+测试得分为 79.76584625
+<__main__.mae_args object at 0x7f93eff3d040>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980712
+SUCCESS
+当前附加值为 32
+测试得分为 78.83052826
+<__main__.mae_args object at 0x7f93f4049160>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3216980713
+SUCCESS
+测试得分为 93.07328796
+相应附加值为 33
+INFO:     111.42.148.135:58025 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff3dac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3216980713
+INFO:     111.42.148.135:47089 - "POST /signup HTTP/1.1" 200 OK
+INFO:     111.42.148.135:48497 - "POST /checkusername HTTP/1.1" 200 OK
+[452.48, 294, 212.33, 283]
+mask_status: 0
+INFO:     111.42.148.135:46141 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4049f70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980713
+seed是: 3216980713
+INFO:     111.42.148.135:58887 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:60995 - "POST /match HTTP/1.1" 200 OK
+[432.44, 257, 250.04, 245]
+mask_status: 0
+INFO:     111.42.148.135:62395 - "POST /detect HTTP/1.1" 200 OK
+[600.58, 383, -34.21, 375]
+mask_status: 0
+INFO:     111.42.148.135:46666 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:60250 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:42037 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:53986 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.42.148.135:37731 - "POST /detect HTTP/1.1" 200 OK
+[361.28, 305, 219.18, 289]
+mask_status: 1
+INFO:     111.42.148.135:46679 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41666d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:46168 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:48717 - "POST /match HTTP/1.1" 200 OK
+[433.19, 281, 257.71, 264]
+mask_status: 1
+INFO:     111.42.148.135:51371 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404c550>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:47294 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:46565 - "POST /match HTTP/1.1" 200 OK
+[444.09, 279, 239.88, 266]
+mask_status: 1
+INFO:     111.42.148.135:43814 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4103b20>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3216980711
+seed是: 3216980711
+INFO:     111.42.148.135:39491 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.42.148.135:32550 - "POST /match HTTP/1.1" 200 OK
+[345.17, 473, 198.97, 426]
+mask_status: 0
+INFO:     127.0.0.1:57334 - "POST /detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "POST /rec HTTP/1.1" 200 OK
+[454.91, 539, 164.29, 553]
+mask_status: 0
+INFO:     127.0.0.1:33290 - "POST /detect HTTP/1.1" 200 OK
+[454.91, 539, 164.29, 553]
+mask_status: 0
+INFO:     127.0.0.1:33316 - "POST /detect HTTP/1.1" 200 OK
+[454.91, 539, 164.29, 553]
+mask_status: 0
+INFO:     127.0.0.1:33322 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4166760>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 3233466874
+SUCCESS
+测试得分为 90.14382172
+相应附加值为 31
+INFO:     127.0.0.1:33330 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff9cc70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 3233466874
+INFO:     127.0.0.1:33336 - "POST /signup HTTP/1.1" 200 OK
+[221.94, 489, 234.16, 506]
+mask_status: 0
+INFO:     127.0.0.1:33404 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93effa6dc0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466874
+seed是: 3233466874
+INFO:     127.0.0.1:33410 - "POST /rec HTTP/1.1" 200 OK
+[221.94, 489, 234.16, 506]
+mask_status: 0
+INFO:     127.0.0.1:33414 - "POST /detect HTTP/1.1" 200 OK
+[221.94, 489, 234.16, 506]
+mask_status: 0
+INFO:     127.0.0.1:33428 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f40479d0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466874
+seed是: 3233466874
+INFO:     127.0.0.1:33434 - "POST /rec HTTP/1.1" 200 OK
+[221.94, 489, 234.16, 506]
+mask_status: 0
+INFO:     127.0.0.1:33438 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff10970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3233466874
+seed是: 3233466874
+INFO:     127.0.0.1:33444 - "POST /rec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33452 - "POST /match HTTP/1.1" 200 OK
+INFO:     223.104.113.36:2561 - "POST /checkusername HTTP/1.1" 200 OK
+[292.17, 353, 169.47, 348]
+mask_status: 0
+INFO:     223.104.113.36:2562 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4047bb0>
+Creating model: pretrain_mae_base_patch16_224
+[291.83, 349, 180.91, 348]
+mask_status: 0
+INFO:     223.104.113.36:2563 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1725587677
+SUCCESS
+测试得分为 93.09091187
+相应附加值为 31
+INFO:     223.104.113.36:2564 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff84ac0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1725587677
+INFO:     223.104.113.36:2565 - "POST /signup HTTP/1.1" 200 OK
+[282.85, 346, 182.99, 348]
+mask_status: 0
+INFO:     223.104.113.36:2566 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff10c40>
+Creating model: pretrain_mae_base_patch16_224
+[299.61, 343, 190.06, 345]
+mask_status: 0
+INFO:     223.104.113.36:2567 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1752231527
+seed是: 1752231527
+INFO:     223.104.113.36:2568 - "POST /rec HTTP/1.1" 200 OK
+INFO:     223.104.113.36:2569 - "POST /match HTTP/1.1" 200 OK
+[267.56, 360, 184.18, 361]
+mask_status: 0
+INFO:     223.104.113.36:2570 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404c040>
+Creating model: pretrain_mae_base_patch16_224
+[275.79, 351, 185.22, 353]
+mask_status: 0
+INFO:     223.104.113.36:2571 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1752231527
+seed是: 1752231527
+INFO:     223.104.113.36:2572 - "POST /rec HTTP/1.1" 200 OK
+INFO:     223.104.113.36:2573 - "POST /match HTTP/1.1" 200 OK
+INFO:     223.104.113.36:2574 - "POST /checkusername HTTP/1.1" 200 OK
+INFO:     223.104.113.36:3164 - "POST /checkusername HTTP/1.1" 200 OK
+[322.81, 338, 198.57, 342]
+mask_status: 0
+INFO:     223.104.113.36:3165 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4166d30>
+Creating model: pretrain_mae_base_patch16_224
+[308.85, 342, 184.46, 346]
+mask_status: 0
+INFO:     223.104.113.36:3166 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/ori_img.jpg
+purpose= test
+seed是: 1752231527
+SUCCESS
+测试得分为 90.79082489
+相应附加值为 31
+INFO:     223.104.113.36:3167 - "POST /test HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff9c2e0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+window size = (14, 14)
+img path: output/ori_img.jpg
+purpose= e
+seed是: 1752231527
+INFO:     223.104.113.36:3168 - "POST /signup HTTP/1.1" 200 OK
+[322.75, 349, 168.23, 354]
+mask_status: 0
+INFO:     223.104.113.36:3169 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41660a0>
+Creating model: pretrain_mae_base_patch16_224
+[308.47, 355, 189.11, 360]
+mask_status: 0
+INFO:     223.104.113.36:3170 - "POST /detect HTTP/1.1" 200 OK
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1752231527
+seed是: 1752231527
+INFO:     223.104.113.36:3171 - "POST /rec HTTP/1.1" 200 OK
+INFO:     223.104.113.36:3172 - "POST /match HTTP/1.1" 200 OK
+INFO:     223.104.113.36:3173 - "POST /checkusername HTTP/1.1" 200 OK
+[307.01, 309, 216.19, 341]
+mask_status: 1
+INFO:     223.104.113.36:3174 - "POST /detect HTTP/1.1" 200 OK
+[312.22, 302, 222.17, 332]
+mask_status: 1
+INFO:     223.104.113.36:3175 - "POST /detect HTTP/1.1" 200 OK
+[299.72, 317, 214.18, 336]
+mask_status: 1
+INFO:     223.104.113.36:3176 - "POST /detect HTTP/1.1" 200 OK
+[748.96, 513, 89.73, 522]
+mask_status: 0
+INFO:     111.40.58.236:54539 - "OPTIONS /detect HTTP/1.1" 200 OK
+[235.24, 226, 471.32, 241]
+mask_status: 0
+INFO:     111.40.58.236:54539 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:54539 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41e2490>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:44794 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:44794 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:54539 - "POST /match HTTP/1.1" 200 OK
+[234.08, 225, 460.84, 237]
+mask_status: 0
+INFO:     111.40.58.236:44273 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f41e24f0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:44273 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:44273 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:44273 - "OPTIONS /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:44273 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53106 - "OPTIONS /user/logout HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53106 - "GET /user/logout HTTP/1.1" 200 OK
+[229.18, 231, 468.28, 245]
+mask_status: 0
+INFO:     111.40.58.236:38462 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404cfa0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:38462 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:38462 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:38462 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53906 - "GET /user/logout HTTP/1.1" 200 OK
+[238.16, 227, 459.44, 238]
+mask_status: 0
+INFO:     111.40.58.236:53906 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f426fdf0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:53906 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53906 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53906 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:39208 - "GET /user/logout HTTP/1.1" 200 OK
+[244.03, 244, 464.21, 254]
+mask_status: 0
+INFO:     111.40.58.236:41585 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4166070>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:41585 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:41585 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:41585 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:46019 - "GET /user/logout HTTP/1.1" 200 OK
+[249.69, 207, 428.43, 223]
+mask_status: 0
+INFO:     111.40.58.236:41231 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f426f670>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390854
+seed是: 1585390854
+INFO:     111.40.58.236:41231 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:41231 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:41231 - "GET /user/info?token=test40 HTTP/1.1" 200 OK
+INFO:     111.40.58.236:37765 - "OPTIONS /detect HTTP/1.1" 200 OK
+[245.32, 206, 442.11, 221]
+mask_status: 0
+INFO:     111.40.58.236:37765 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:37765 - "OPTIONS /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:62958 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:62958 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:62958 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:35257 - "OPTIONS /detect HTTP/1.1" 200 OK
+[260.53, 211, 466.67, 224]
+mask_status: 0
+INFO:     111.40.58.236:35257 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:35257 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4228c10>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:60795 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:60795 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:60795 - "POST /match HTTP/1.1" 200 OK
+[263.62, 218, 469.47, 232]
+mask_status: 0
+INFO:     111.40.58.236:51580 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f404c460>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:51580 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:51580 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:54134 - "OPTIONS /detect HTTP/1.1" 200 OK
+[256.91, 218, 497.2, 231]
+mask_status: 0
+INFO:     111.40.58.236:54134 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:54134 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff197c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:37083 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:37083 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:54134 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:63146 - "OPTIONS /detect HTTP/1.1" 200 OK
+[251.17, 227, 437.27, 246]
+mask_status: 0
+INFO:     111.40.58.236:63146 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:63146 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f426f7c0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:63146 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:63146 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:63146 - "POST /match HTTP/1.1" 200 OK
+[261.21, 232, 469.74, 248]
+mask_status: 0
+INFO:     111.40.58.236:46332 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff3dd30>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:46332 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:46332 - "POST /match HTTP/1.1" 200 OK
+[286.44, 248, 393.21, 248]
+mask_status: 0
+INFO:     111.40.58.236:51240 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff19ee0>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:51240 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:51240 - "POST /match HTTP/1.1" 200 OK
+[295.34, 241, 685.44, 259]
+mask_status: 0
+INFO:     111.40.58.236:49448 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff10f70>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 3759594829
+seed是: 3759594829
+INFO:     111.40.58.236:49448 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:49448 - "POST /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:43313 - "OPTIONS /detect HTTP/1.1" 200 OK
+[243.74, 263, 498.28, 274]
+mask_status: 0
+INFO:     111.40.58.236:43313 - "POST /detect HTTP/1.1" 200 OK
+INFO:     111.40.58.236:43313 - "OPTIONS /rec HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93f4086550>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:43313 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:43313 - "OPTIONS /match HTTP/1.1" 200 OK
+INFO:     111.40.58.236:53286 - "POST /match HTTP/1.1" 200 OK
+[211.62, 252, 517.91, 272]
+mask_status: 0
+INFO:     111.40.58.236:34048 - "POST /detect HTTP/1.1" 200 OK
+<__main__.mae_args object at 0x7f93eff84970>
+Creating model: pretrain_mae_base_patch16_224
+Patch size = (16, 16)
+img path: output/encoding/mask_img.jpg
+purpose= d
+seed是: 1585390850
+seed是: 1585390850
+INFO:     111.40.58.236:34048 - "POST /rec HTTP/1.1" 200 OK
+INFO:     111.40.58.236:34048 - "POST /match HTTP/1.1" 200 OK

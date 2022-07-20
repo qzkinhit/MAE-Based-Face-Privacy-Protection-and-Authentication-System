@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="卡号"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background2"
+            android:text="请刷NFC卡"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray_text" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="密码"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_background2"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textColorHint="@color/gray_text" />
+
+        <CheckBox
+            android:id="@+id/cb_nopwd"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/gray_text"
+            android:buttonTint="@color/blue"
+            android:text="未设密码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background2"
+            android:textColor="@color/white"
+            android:text="下一步" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_noNFC"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="检测到您的设备不支持NFC，抱歉您无法体验本功能" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_NFCoff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="请先打开本设备的NFC功能，然后重新启动本应用" />
+
+    </FrameLayout>
+
+</FrameLayout>
