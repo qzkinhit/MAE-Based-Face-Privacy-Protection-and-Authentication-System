@@ -137,7 +137,7 @@ streamlit端（主页兼注册页演示（在线拍照需要配置权限））:h
 
 # VUE前端说明
 
-本地vue端文件：vue-mae
+vue端code：https://github.com/qzkinhit/mae_vue
 
 在线演示：（上班打卡系统在线演示）: https://mae.zkabout.xyz/
 
